@@ -8,7 +8,7 @@ board_cells = 15
 
 width = tile_size * board_cells
 height = tile_size * board_cells
-fondo_original = pygame.image.load("BETA/assets/fondo.png")
+fondo_original = pygame.image.load("G3/data/fondo.png")
 background = pygame.transform.scale(fondo_original, (width, height))
 
 def dibujar_cuadricula():
@@ -22,8 +22,8 @@ clock = pygame.time.Clock()
 text_font = pygame.font.SysFont("Arial", 24)
 
 # Sonidos
-sonido_comer = pygame.mixer.Sound("BETA/assets/comer.wav")
-sonido_muerte = pygame.mixer.Sound("BETA/assets/muerte.wav")
+sonido_comer = pygame.mixer.Sound("G3/data/comer.wav")
+sonido_muerte = pygame.mixer.Sound("G3/data/muerte.wav")
 
 # variable del contador de energia
 energia_count = 0
@@ -50,9 +50,9 @@ angulo_cabeza = 0
 
 # Obstaculos
 obstaculos = []
-tacho1 = pygame.image.load("BETA/assets/tacho verde.png")
+tacho1 = pygame.image.load("G3/data/tacho verde.png")
 tacho1 = pygame.transform.scale(tacho1, (tile_size, tile_size))
-tacho2 = pygame.image.load("BETA/assets/tacho negro.png")
+tacho2 = pygame.image.load("G3/data/tacho negro.png")
 tacho2 = pygame.transform.scale(tacho2, (tile_size, tile_size))
 modelos_obstaculos = [tacho1, tacho2]
 
@@ -61,34 +61,34 @@ running = True
 game_over = False
 
 # Imagen de la pantalla de inicio
-imagen_inicio_original = pygame.image.load("BETA/assets/Fondo Copia.png")
+imagen_inicio_original = pygame.image.load("G3/data/Fondo Copia.png")
 imagen_inicio = pygame.transform.scale(imagen_inicio_original, (width, height))
 # Imagen de la pantalla de derrota
-imagen_derrota_original = pygame.image.load("BETA/assets/Fondo Derrota.png")
+imagen_derrota_original = pygame.image.load("G3/data/Fondo Derrota.png")
 imagen_derrota = pygame.transform.scale(imagen_derrota_original, (width, height))
 # Estados del juego:
 estado_juego = "INICIO"
 
 # Imagen cara snake
-face_img = pygame.image.load("BETA/assets/pasted-image.png")
+face_img = pygame.image.load("G3/data/pasted-image.png")
 face_img = pygame.transform.scale(face_img, (snake_size, snake_size))
 
 # Imagen cuerpo snake
-body_img = pygame.image.load("BETA/assets/torso.png")
+body_img = pygame.image.load("G3/data/torso.png")
 body_img = pygame.transform.scale(body_img, (snake_size, snake_size))
 
 snake_body = []
 snake_length = 1
 
 # Imagen planeta (visible)
-planeta_img = pygame.image.load("BETA/assets/pngtree-real-hamburger.png")
+planeta_img = pygame.image.load("G3/data/pngtree-real-hamburger.png")
 planeta_img = pygame.transform.scale(planeta_img, (snake_size, snake_size))
 
 # enemigo vagabundo
-homeless_idle = pygame.image.load("BETA/assets/vagabundo.png")
+homeless_idle = pygame.image.load("G3/data/vagabundo.png")
 homeless_idle = pygame.transform.scale(homeless_idle, (enemy_size, enemy_size))
 
-homeless_throw = pygame.image.load("BETA/assets/vagabundo_2.png")
+homeless_throw = pygame.image.load("G3/data/vagabundo_2.png")
 homeless_throw = pygame.transform.scale(homeless_throw, (enemy_size, enemy_size))
 
 enemy_state = "idle"
