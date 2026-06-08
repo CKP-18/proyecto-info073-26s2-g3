@@ -8,7 +8,7 @@ board_cells = 15
 
 width = tile_size * board_cells
 height = tile_size * board_cells
-fondo_original = pygame.image.load("fondo.png")
+fondo_original = pygame.image.load("assets/fondo.png")
 background = pygame.transform.scale(fondo_original, (width, height))
 
 def dibujar_cuadricula():
@@ -22,8 +22,8 @@ clock = pygame.time.Clock()
 text_font = pygame.font.SysFont("Arial", 24)
 
 # Sonidos
-sonido_comer = pygame.mixer.Sound("comer.wav")
-sonido_muerte = pygame.mixer.Sound("muerte.wav")
+sonido_comer = pygame.mixer.Sound("assets/comer.wav")
+sonido_muerte = pygame.mixer.Sound("assets/muerte.wav")
 
 # variable del contador de comida
 food_count = 0
@@ -48,9 +48,9 @@ y_change = 0
 
 # Obstaculos
 obstaculos = []
-tacho1 = pygame.image.load("tacho verde.png")
+tacho1 = pygame.image.load("assets/tacho verde.png")
 tacho1 = pygame.transform.scale(tacho1, (tile_size, tile_size))
-tacho2 = pygame.image.load("tacho negro.png")
+tacho2 = pygame.image.load("assets/tacho negro.png")
 tacho2 = pygame.transform.scale(tacho2, (tile_size, tile_size))
 modelos_obstaculos = [tacho1, tacho2]
 
@@ -59,21 +59,21 @@ running = True
 game_over = False
 
 # Imagen cara snake
-face_img = pygame.image.load("pasted-image.png")
+face_img = pygame.image.load("assets/pasted-image.png")
 face_img = pygame.transform.scale(face_img, (snake_size, snake_size))
 
 snake_body = []
 snake_length = 1
 
 # Imagen comida
-food_img = pygame.image.load("pngtree-real-hamburger.png")
+food_img = pygame.image.load("assets/pngtree-real-hamburger.png")
 food_img = pygame.transform.scale(food_img, (snake_size, snake_size))
 
 # enemigo vagabundo
-homeless_idle = pygame.image.load("vagabundo.png")
+homeless_idle = pygame.image.load("assets/vagabundo.png")
 homeless_idle = pygame.transform.scale(homeless_idle, (enemy_size, enemy_size))
 
-homeless_throw = pygame.image.load("vagabundo_2.png")
+homeless_throw = pygame.image.load("assets/vagabundo_2.png")
 homeless_throw = pygame.transform.scale(homeless_throw, (enemy_size, enemy_size))
 
 enemy_state = "idle"
