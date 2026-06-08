@@ -1,0 +1,4 @@
+Se añadio, rotaciones de la cabeza de la snake, cambios en la ambientanción para que se asimilen a los solicitados por el usuario, aunque aun encontramos su idea de fusión
+de juegos "imposible" pues rompe la tematica de snake, sin embargo mantenemos el personaje, se agrego una pantalla de inicio, de derrota y estados de juego para su 
+organización, se reemplazo todo lo que tenga que ver con "comida" con energia para que sea más acorde al ambiente, y se le añadio a la snake una cola pequeña
+para identificar donde termina, además de un nuevo torso y rostro que combinan con los dibujos del usuario pero en nuestro propio estilo grafico.
